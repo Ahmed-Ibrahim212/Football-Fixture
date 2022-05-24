@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vav_graph"
+    app:startDestination="@id/competitionsFragment">
+
+    <fragment
+        android:id="@+id/competitionsFragment"
+        tools:layout="@layout/fragment_competition_list"
+        android:name="com.example.footballpackage.ui.competitions.CompetitionsFragment"
+        android:label="CompetitionsFragment" >
+        <action
+            android:id="@+id/action_competitionsFragment_to_fixturesFragment"
+            app:destination="@id/fixturesFragment" />
+        <argument
+            android:name="leagueId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamFragment"
+        tools:layout="@layout/fragment_team"
+        android:name="com.example.footballpackage.ui.competitions.team.TeamFragment"
+        android:label="TeamFragment" />
+    <fragment
+        android:id="@+id/fixturesFragment"
+        tools:layout="@layout/fragment_fixtures"
+        android:name="com.example.footballpackage.ui.competitions.fixtures.FixturesFragment"
+        android:label="FixturesFragment" />
+    <fragment
+        android:id="@+id/tableFragment"
+        tools:layout="@layout/fragment_table"
+        android:name="com.example.footballpackage.table.TableFragment"
+        android:label="TableFragment" />
+</navigation>
