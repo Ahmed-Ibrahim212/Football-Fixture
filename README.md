@@ -25,4 +25,6 @@ Room - for offline caching -> database
 
 ViewBinding - binding data to views
 
+Bottom Navigations and jetpack libraries, like navigationcomponents
+
 The api is not free which is difficult to acess all.
